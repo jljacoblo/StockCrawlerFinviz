@@ -8,11 +8,10 @@ var allProcessedData = {};
 
 // ajaxRequestData is what you pass to the url: http://example.com?r=1
 var ajaxRequestData = [];
-for (let k = 1 ; k < 3824 ; k+=20 ) {
+for (let k = 1 ; k < 507 ; k+=20 ) {
   ajaxRequestData.push({"r":k});
 }
-const finvizURL = 'https://finviz.com/screener.ashx?v=111&f=exch_nasd&o=-marketcap&';
-
+const finvizURL = 'https://finviz.com/screener.ashx?v=111&f=idx_sp500&ft=4&o=-marketcap&';
 
 var getFinvizTable = (html, index) => {
   console.log('Page done : ', index);
